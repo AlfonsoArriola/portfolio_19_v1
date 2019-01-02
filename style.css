@@ -1,3 +1,11 @@
-body{
-	background: grey;
-}
+body .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-gap: 1em; }
+  body .grid > div {
+    background: #eee;
+    padding: 1em; }
+    body .grid > div:nth-child(odd) {
+      background: #ddd; }
+
+/*# sourceMappingURL=style.css.map */
