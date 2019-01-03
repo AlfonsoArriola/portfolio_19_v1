@@ -1,13 +1,99 @@
+$black: #010202
+$charcoal: #36454F
+$lapis: #26003F
+$salmon: #FF9B76
+$coral: #FF7F50
+$silver: #C0C0C0
+$banana: #FFE135
+$canary: #FFEF00
+$white-smoke: #F5F5F5
+
 body
+  background: $black
+  margin: 0px
+  padding: 0px
+body
+   
   .grid 
+    color: $black
+    background: $silver
     display: grid
-    grid-template-columns: 1fr 2fr 3fr
+    grid-template-columns: 1fr
     grid-gap: 1em
     > div
-      background: #eee
+      background: $salmon
       padding: 1em
       &:nth-child(odd)
-        background: #ddd
+        background: $coral
+
+.project_grid
+  background-color: $lapis
+  display: grid
+  grid-template-columns: 1fr 2fr
+  grid-gap: 2em
+  justify-items: stretch
+  > div
+    background: $charcoal
+    color: white
+    &.bottom
+      grid-column: 1/ 4
+    img
+      height: 13rem
+
+.project_grid2
+  background-color: $lapis
+  display: grid
+  grid-template-columns: 1fr 2fr
+  grid-template-rows: 200px 300px
+  grid-gap: 2em
+  justify-items: stretch
+  > div
+    background: $charcoal
+    color: white
+    &.bottom
+      grid-column: 1/ 4
+    img
+      height: 13rem
+
+.main
+  display: flex
+  position: relative  
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.img_section
+  height: 350px
+  width: 300px
+  background: $lapis
+  position: relative
+  border-radius: 15px
+  overflow: hidden
+
+.info_section
+  height: 300px
+  width: 450px 
+  background: $banana
+  position: relative
+  margin-top: 25px
+  margin-left: -150px
+  border-radius: 15px
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2)
+
+.project2
+  height: 300px
+  width: 300px
+  position: absolute
+  left: 33%
+
+.pjt_img
+  width: 90%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 99
+
 
 
  
